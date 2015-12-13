@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Ng Media Query</title>
+    <style>
+       blockquote{font-weight:bold;}
+       blockquote span{font-weight:normal;}
+    </style>
 </head>
 <body>
    
    <div ng-app="exampleMediaQuery">
        <div ng-controller="mediaQueryController">
-           <blockquote>{{media}}</blockquote>
+           <blockquote>Media Size: <span>{{ media }}</span></blockquote>
        </div>
    </div>
     
