@@ -1,6 +1,13 @@
+// ng-media-query v1.0.1
+// @params: xs, sm, md, lg, set key value pair according to the break points
+// Created date: 13th Dec, 2015
+// Last edited date: 13th Dec, 2015
+// Contributors: Amitesh, Sumit
+
+
 var ngMediaQuery = angular.module('ngMediaQuery', []);
 
-ngMediaQuery.value('media', {
+ngMediaQuery.value('media', {  // to change the media values set query params below, -1 is used for no minimum or maximum limit, use pixel values 
     'xs': [-1, 767],
     'sm': [768, 991],
     'md': [992, 1199],
@@ -31,12 +38,12 @@ ngMediaQuery.factory('NgMediaQuery', ['$rootScope', '$window', '$log', 'media', 
             });
             return defer.promise;
         };
-
+        //  Browser resize check: use this for when browser resize check
         angular.element($window).bind('resize', function () {
             windowWidth = $window.innerWidth;
             setMedia();
         });
-
+        // Orientation change check: use this for orientationchange check
         angular.element($window).bind('orientationchange', function () {
             windowWidth = $window.innerWidth;
             setMedia();
