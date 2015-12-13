@@ -4,18 +4,26 @@
 
 ## Installation
 
-**(1)** Bower
+**(1)** node(npm)
+
+>
+```html
+npm install ng-media-query
+```
+
+**(2)** Bower
 
 >
 ```html
 bower install ng-media-query
 ```
 
-**(2)** Manual
+**(3)** Manual
 
 >
 ```html
 Download ng-media-query.js
+or       ng-media-query.min.js
 ```
 
 ## Dependencies
